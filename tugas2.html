@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <fieldset>
+
+        <table>
+        <h2>Form Pendaftaran</h2>
+        
+        <form action="#" method="POST">
+            <!-- 1. Text Input -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama..." required>
+            </div>
+
+            <!-- 2. Password Input -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan kata sandi..." required>
+            </div>
+
+            <!-- 3. Radio Button -->
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="inline-options">
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="gender" value="Perempuan"> Perempuan
+                    </label>
+                </div>
+            </div>
+
+            <!-- 4. Select Option -->
+            <div class="form-group">
+                <label for="jurusan">Jurusan:</label>
+                <select id="jurusan" name="jurusan">
+                    <option value=""> Pilih Jurusan </option>
+                    <option value="ti">Teknologi Informasi</option>
+                    <option value="ilkom">Ilmu Komputer</option>
+                </select>
+            </div>
+
+            <!-- 5. Olahraga yang disukai-->
+            <div class="form-group">
+                <label>Olahraga yang Disukai:</label>
+                <div class="inline-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="olahraga[]" value="Futsal"> Futsal
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="olahraga[]" value="Basket"> Basket
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="olahraga[]" value="Voli"> Voli
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="olahraga[]" value="Badminton"> Badminton
+                    </label>
+                </div>
+            </div>
+
+            <!-- 6. Textarea -->
+            <div class="form-group">
+                <label for="alamat">Alamat:</label>
+                <textarea id="alamat" name="alamat" rows="4" placeholder="Tuliskan alamat lengkap Anda"></textarea>
+            </div>
+
+            <!-- 7. Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+            </fieldset>
+        </form>
+    </table>
+    </div>
+
+</body>
+</html>

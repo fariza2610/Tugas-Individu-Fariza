@@ -1,0 +1,131 @@
+/* Styling Utama Halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 0;
+}
+
+/* Pembungkus Utama (Kartu Putih) */
+.card {
+    background-color: lightskyblue;
+    width: 70%;
+    max-width: 420px;
+    padding: 30px 25px;
+    border-radius: 20px; /* Sudut melengkung halus */
+    border: 2px lightskyblue;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: black; /* Warna cokelat elegan */
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label Input */
+.form-group > label {
+    display: block;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+/* Input Text, Password, Select, Textarea */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px lightskyblue; /* Garis tepi kuning lembut */
+    border-radius: 12px;
+    background-color: #fffffc;
+    font-size: 17px;
+    color:black;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+textarea::placeholder {
+    color: #bbb;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: lightskyblue;
+    background-color: lightblue;
+}
+
+/* Menata Pilihan Radio dan Checkbox agar Sejajar */
+.inline-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-label, .checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #5c3d2e;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.radio-label input, .checkbox-label input {
+    accent-color: solid blue; /* Warna kuning pada bulatan/kotak saat dicentang */
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-list {
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.checkbox-label span {
+    line-height: 1.2;
+}
+
+/* Tombol Submit */
+.btn-submit {
+    width: 100%;
+    background-color: lightskyblue; /* Warna kuning cerah tombol */
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px black;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color:lightskyblue;
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
