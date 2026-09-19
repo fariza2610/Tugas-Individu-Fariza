@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Aritmatika Sederhana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .container {
+            border: 1px solid blue;
+            padding: 20px;
+            width: 380px; 
+            margin: 50px auto; 
+            height: 150px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .form-group label {
+            width: 130px;
+        }
+        .form-group input {
+            width: 200px;
+            padding: 5px;
+        }
+        .buttons {
+            margin-left: 130px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .buttons button {
+            width: 30px;
+            height: 30px;
+            margin-right: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Kalkulator Aritmatika Sederhana</h2>
+
+    <div class="container">
+        <div class="form-group">
+            <label for="angka1">Input Bilangan 1</label>
+            <input type="number" id="angka1">
+        </div>
+
+        <div class="form-group">
+            <label for="angka2">Input Bilangan 2</label>
+            <input type="number" id="angka2">
+        </div>
+
+        <div class="buttons">
+            <button onclick="hitung('+')">+</button>
+            <button onclick="hitung('-')">-</button>
+            <button onclick="hitung('*')">x</button>
+            <button onclick="hitung('/')">/</button>
+        </div>
+
+        <div class="form-group">
+            <label for="output">Output</label>
+            <input type="text" id="output" readonly>
+        </div>
+    </div>
+
+    <script>
+        function hitung(operator) {
+            // Ambil nilai dari input dan mengubahnya ke tipe data angka (float)
+            const bil1 = parseFloat(document.getElementById('angka1').value);
+            const bil2 = parseFloat(document.getElementById('angka2').value);
+            let hasil = 0;
+
+            // Validasi jika input kosong
+            if (isNaN(bil1) || isNaN(bil2)) {
+                alert('Harap masukkan kedua bilangan terlebih dahulu!');
+                return;
+            }
+
+            switch (operator) {
+                case '+':
+                    hasil = bil1 + bil2;
+                    break;
+                case '-':
+                    hasil = bil1 - bil2;
+                    break;
+                case '*':
+                    hasil = bil1 * bil2;
+                    break;
+                case '/':
+                    if (bil2 === 0) {
+                        alert('Tidak dapat membagi dengan angka nol!');
+                        return;
+                    }
+                    hasil = bil1 / bil2;
+                    break;
+            }
+
+            // Tampilkan hasil pada input dan Output
+            document.getElementById('output').value = hasil;
+        }
+    </script>
+
+</body>
+</html>
