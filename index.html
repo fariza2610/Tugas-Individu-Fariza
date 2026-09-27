@@ -1,131 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Tugas Individu-Fariza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>FJM STORE</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Google Font -->
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #152a43;
-            color: #333;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU+Guides&family=Poppins:wght@400;500;600;700&display=swap');
 
-        header {
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaYqPsfCR0Ky-BcQ6bIFlvmz5dKkBnQyDVTYfH9eFWw&s=10");
-            background-size: cover;
-            background-position: 80%;
-            color: #152a43;
-            text-align: center;
-            padding: 30px;
-        }
-
-        nav {
-            background-color: #152a43;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        aside {
-            width: 25%;
-            background-color: #dbe7f3;
-            padding: 25px;
-        }
-
-        main {
-            width: 75%;
-            background-color: white;
-            padding: 25px;
-        }
-
-        footer {
-            background-color: #1e3a5f;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            color: #1e3a5f;
-        }
-
-        header h1 {
-            color: white;
-        }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1 style="color: #152a43;">HOBBY SAYA</h1>
-       <h3><p>Bermain Futsal</p></h3>
-       <h3><p>Lebih dari sekedar permainan, futsal adalah gaya hidup!</p></h3>
-    </header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg border-bottom" style="background-color: lightskyblue;">
+        <div class="container"> <!-- Diubah ke container biasa agar sejajar dengan isi konten di bawah -->
+            
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="https://www.instagram.com/parijaanst?stkn=NnA0aHJiNDd4dmkz&utm_rce=qr">About Me</a>
-        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfqXE88HAJ8htaI3WmnLPNuYyTYOZ_NNcCDACdjRDZw&s=10">Gallery</a>
-        <a href="tel:+6282379344704">Contact</a>
+            <!-- Logo -->
+            <h3>
+            <a class="navbar-brand fw-bold" href="#">
+                FJM PROJECT
+            </h3>
+            </a>
+
+            <!-- Tombol ketika layar kecil -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Isi Navbar -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- UBAH me-auto MENJADI ms-auto DI SINI agar menu bergeser ke kanan dan sejajar sebelum tombol -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-3">
+
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <!-- Tutorial Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Product
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Shockbreaker</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Velg</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Knalpot Racing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Billed AES</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Baut Titanium</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Profil -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <!-- Hubungi -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rating Us</a>
+                    </li>
+
+                </ul>
+
+                <!-- Tombol Daftar & Masuk -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-outline-primary" type="button">
+                        Flash Sale
+                    </button>
+
+                    <button class="btn btn-primary" type="button">
+                        Daftar
+                    </button>
+                </div>
+
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
 
-        <aside>
-            <h2>Menu</h2>
-            <ul>
-                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuL-pBdr-bmr_grs2fXxeFb5R4cvF8hz9iQJhN1YP40w&s=10">Tentang Futsal</a></li>
-                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9b3AxRUduqQ9DCJ2Zn_RzOMEXae1yHum6kz1h-dDGWw&s=10">Peralatan Futsal</a></li>
-                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdkc4l3tsI5c3wlEMR_yqWfvlMCmBYIc76MgQ4NBsHQ&s=10">Teknik Dasar</a></li>
-                <li><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXLdf3kDFzybexKuwDJCqtJo2xqBM6foUzc-OcEZwDWg&s=10">Manfaat Futsal</a></li>
-            </ul>
+    <!-- HERO SECTION -->
+    <section style="background-color:lightcyan ;">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
 
-            <h2>Link</h2>
-            <ul>
-                <li><a href="tugas2.html">Tugas 2 </a></li>
-            </ul>
+                <!-- Teks Kiri -->
+                <div class="col-md-6">
 
-            <h2>Link</h2>
-            <ul>
-                <li><a href="tugas3.html">Tugas 3 </a></li>
-            </ul>
+                    <h2 class="hero-title">
+                        Welcome to FJM PROJECT!
+                    </h2>
 
-            <h2>Link</h2>
-            <ul>
-                <li><a href="tugas4.html">Tugas 4 </a></li>
-            </ul>
-        </aside>
+                    <h2 class="mt-3 mb-4 text-secondary">
+                        Enjoy your shopping
+                    </h2>
 
-        <main>
-<h2>Fariza Aldafa Nasution</h2>
-            <p>
-                Futsal adalah hobi yang sangat saya sukai. Saya suka bermain futsal mulai dari SD, saya bermain bersama teman-teman setiap 2x seminggu. Futsal bukan sekedar olahraga, tetapi juga cara saya untuk tetap menjaga kebugaran, melepaskan stres, dan memperat hubungan persaudaraan.
-            </p>
-<p> Dalam bermain futsal, saya belajar tentang kerja sama tim, disiplin, sportivitas dan semangat pantang menyerah.
-    Setiap pertandingan yang sudah saya lalui memberikan pengalaman berharga, motivasi untuk latihan lebih keras dan menjadi lebih baik.
-</p>
+                   <a type="button" class="btn btn-secondary">Lihat Produk</button></a>
+                   <a type="button" class="btn btn-secondary">Rating Produk</button></a>
+                </div>
 
-<p>Saya berharap saya dapat terus mengembangkan kemampuan bermain futsal dan bisa mengikuti turnamen untuk meraih prestasi lebih banyak.</p>
-<p> "Futsal bukan hanya tentang mencetak gol,</p>
-<p>tetapi tentang kerja sama dan menikmati setiap momen di lapangan."</p>
-        </main>
 
-    </div>
+                <!-- Gambar Kanan -->
+                <div class="col-md-6 d-none d-md-block text-center">
 
-    <footer>
-        © 2026 Hobby Saya | Play Hard, Have Fun, Win Together!
-    </footer>
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNs0UA2uiNSPDkawW17ovYmPVi7zRLFib3nOxb4Kinlw&s=10"
+                        alt="Gambar Bengkel Motor"
+                        class="img-fluid"
+                        width="500">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="d-flex flex-wrap gap-3">
+    
+    <div class="card" style="width: 15rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bs0nskgLtprnvA7ilCUmLq--EX6MTLRM51UJ6Hc1Kw&s=10" class="card-img-top" height="250">
+  <div class="card-body">
+    <h5 class="card-title">Shockbreaker</h5>
+    <p class="card-text">Shockbreaker RCB single dengan ukuran 310mm </p>
+    <p class="card-text">Rp 1.500.000 </p>
+    <a href="#" class="btn btn-dark">Order</a>
+  </div>
+</div>
+
+<div class="card" style="width: 15rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMiSxXvTYUA-aBS1LXtkDUT617-q6pIv6fBkAFZHwcOQ&s=10" class="card-img-top" height="250">
+  <div class="card-body">
+    <h5 class="card-title">Velg</h5>
+    <p class="card-text">Velg Vnd New Speed Silver Chrome Ring 14</p>
+    <p class="card-text">Rp 1.700.000 </p>
+    <a href="#" class="btn btn-dark">Order</a>
+  </div>
+</div>
+
+<div class="card" style="width: 15rem;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkEScr4xnLzN3cvzlNWWGKV49F9IucJa3uT2P3p1KyXA&s=10" class="card-img-top" height="250">
+  <div class="card-body">
+    <h5 class="card-title">Knalpot Racing</h5>
+    <p class="card-text">Knalpot Racing Shijiro for vespa sprint</p>
+    <p class="card-text">Rp 1.575.000 </p>
+    <a href="#" class="btn btn-dark">Order</a>
+  </div>
+</div>
+
+<div class="card" style="width: 15rem;">
+  <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTyEjznW7MFvvzoeOi2HrJmMiPrwR7F4TLqS3XhXyDWj9ljsX1A9yOn1ILuV6NEoXd0po8lEs8MYWGvj90wG7X8TMq2yBwZAq326gYs2UqjyuRk2pfperJ" class="card-img-top" height="250">
+  <div class="card-body">
+    <h5 class="card-title">Billed AES</h5>
+    <p class="card-text">Billed AES Turbo SE 2pcs ukuran 2.5 inch</p>
+    <p class="card-text">Rp 1.170.000 </p>
+    <a href="#" class="btn btn-dark">Order</a>
+  </div>
+</div>
+
+</div>
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
+</html
